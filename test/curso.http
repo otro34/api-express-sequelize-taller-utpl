@@ -1,0 +1,32 @@
+GET http://localhost:3001/cursos
+
+####
+
+POST http://localhost:3001/cursos
+Content-Type: application/json
+
+{
+    "nombre": "Taller de Postgresql",
+    "profesor": "Domingo Sanchez",
+    "creditos": 5
+}
+
+####
+
+GET http://localhost:3001/cursos/2
+
+####
+
+PUT http://localhost:3001/cursos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nombre": "Taller de FrontEnd",
+    "profesor": "Sara Gomez",
+    "creditos": 5
+}
+
+####
+DELETE http://localhost:3001/cursos/1
+
